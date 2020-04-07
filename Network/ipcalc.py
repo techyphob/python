@@ -4,9 +4,9 @@
 	Description:
 		ipcalc module provides a set of commonly used operations of IPv4 address.
 		The current set includes:
-			network_addr - 
+			is_valid_ip_addr - 
 '''
-def isValidIPAddr(addr):
+def is_valid_ip_addr(addr):
 	if type(addr) == str:
 		try:
 			addr = tuple(map(int,addr.split('.')))
